@@ -1,0 +1,146 @@
+.app {
+  --primaryColor: #6554df;
+}
+
+html {
+  padding-top: 160px; 
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+body{
+  
+  background: #ffb820;
+  background-image: url("./images/BACKGROUND_Icamp.png");
+  background-size:cover;
+  background-repeat:no-repeat; /* fallback for old browsers */
+  overflow-x: hidden;
+}
+
+
+.app {
+  font-family: 'Inter', sans-serif;
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  color: #e9ecef;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.register{
+  max-width: 100rem;
+  width: 100vw;
+  display:flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px #212121;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+  /* box-shadow: 1px 3px 10px #e9ecef; */
+  overflow-x: hidden;
+  position:fixed;
+  top:0;
+  z-index: 1;
+}
+
+
+.button {
+  background-color: var(--primaryColor);
+  height: 2.5rem;
+  width: 95vw;
+  max-width: 25rem;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 36px;
+  
+}
+
+.container{
+  background-color: rgba(0,0,0,0,0.15);
+  max-width: fit-content;
+  width: fit-content;
+  display:flex;
+  border-radius: 12px;
+  align-items: center;
+  padding: 16px;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1px 3px 10px #210101;
+  margin: 16px;
+  overflow-x: hidden;
+}
+.card {
+  
+  max-width:100vw;
+  width: fit-content;
+  
+  display:flex;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputField {
+  width: 24rem;
+  max-width: 94vw;
+  height: 2.4rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding-left: 1vw;
+  background-color: rgb(250, 248, 248);
+  margin: 0;
+}
+select{
+  width: 25rem;
+  max-width: 94vw;
+  height: 2.4rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding-left: 1vw;
+  background-color: rgb(250, 248, 248);
+  margin: 0;
+  box-sizing:border-box;
+  
+}
+
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+.inputField::placeholder {
+  color: rgb(160, 160, 160);
+  /* padding-left: 1rem; */
+}
+
+.inputField:focus {
+  background-color: white;
+  outline: 1px solid rgba(0,0,0,0.3);
+}
+@media screen and (max-width: 800px)  {
+  
+
+  
+}
+@media screen and (max-aspect-ratio: 4/3)  {
+  body{
+    background: #ffb820;
+    backface-visibility: hidden;
+  }
+}
