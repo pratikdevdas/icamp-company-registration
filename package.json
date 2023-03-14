@@ -2,7 +2,7 @@
   "name": "assignment",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ayushkshitij45.github.io/icamp-form/",
+  "homepage": ".",
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.4",
