@@ -32,7 +32,7 @@ function LandingFormPage() {
       setCurrentPage(page + 1);
     } else if (page === 3) {  
          // checks if in 2nd last page, all the mandatory fields are filled or not
-      if (formData.Companyname !== "" && formData.Websitename !== "" && formData.Companylocation !=="" && formData.PocName !== "" && formData.ContactNumber !== "" && formData.MailId !=="" && formData.Domains !== "" && formData.Skills !== "" && formData.MinD !=="" && formData.MaxD !=="" && formData.MinS !=="" && formData.MaxS !=="" && formData.Skills !=="" && formData.Mode !=="") {
+      if (formData.Companyname !== "" && formData.Websitename !== "" && formData.Companylocation !=="" && formData.PocName !== "" && formData.ContactNumber !== "" && formData.MailId !=="" && formData.Domains !== "" && formData.Skills !== "" && formData.MinD !== 0 && formData.MaxD !== 0 && formData.MinS !== 0 && formData.MaxS !== 0 && formData.Skills !=="" && formData.Mode !=="") {
         
         console.log(formData);
         var data = JSON.stringify({

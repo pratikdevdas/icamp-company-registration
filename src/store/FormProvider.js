@@ -5,10 +5,18 @@ function FormProvider({ children }) {
   const defaultDataState = {
     Companyname: "",
     Websitename: "",
+    Companylocation: "",
     PocName: "",
+    ContactNumber: "",
     MailId: "",
-    MinS: "3000",
-    Mode: "On-site"
+    MinS: 0,
+    MaxS: 0,
+    MinD: 0,
+    MaxD: 0,
+    Mode: "On-site",
+    Skills: "",
+    Domains: "",
+    Perks:""
   };
   const defaultValidationState = {
     Companyname: false,
