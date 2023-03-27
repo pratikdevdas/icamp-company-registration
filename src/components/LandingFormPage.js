@@ -33,6 +33,10 @@ function LandingFormPage() {
     } else if (page === 3) {  
          // checks if in 2nd last page, all the mandatory fields are filled or not
       if (formData.Companyname !== "" && formData.Websitename !== "" && formData.Companylocation !=="" && formData.PocName !== "" && formData.ContactNumber !== "" && formData.MailId !=="" && formData.Domains !== "" && formData.Skills !== "" && formData.MinD !== "" && formData.MaxD !== "" && formData.MinS !== "" && formData.MaxS !== "" && formData.Skills !=="" && formData.Mode !=="") {
+
+        if (formData.MinS < 3000) {
+          return alert('Stipend should be above 3000')
+        }
         
         console.log(formData);
         var data = JSON.stringify({
