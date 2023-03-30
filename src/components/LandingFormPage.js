@@ -40,7 +40,7 @@ function LandingFormPage() {
         
         console.log(formData);
         var data = JSON.stringify({
-          "name": `${formData.Companyname}`,
+          name: `${formData.Companyname}`,
           "website":`${formData.Websitename}`,
           "location": `${formData.Companylocation}`,
           "poc": {
@@ -55,9 +55,11 @@ function LandingFormPage() {
             "stipend" : {"min": `${formData.MinS}`, "max": `${formData.MaxS}`}
           },
           additionalPerks: `${formData.Perks}`,
-          mode: `${formData.Mode}`
+          mode: `${formData.Mode}`,
+          ppo: `${formData.Ppo === undefined ? false : formData.Ppo}`
         });
 
+        console.log(data);
         setButtonText('Please Wait...');
         document.getElementById("button").disabled = true;
         

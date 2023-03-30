@@ -16,13 +16,14 @@ function FormProvider({ children }) {
     Mode: "On-site",
     Skills: "",
     Domains: "",
-    Perks:""
+    Perks:"",
+    ppo:false
   };
   const defaultValidationState = {
     Companyname: false,
     Websitename: false,
-    PocName: false,
-    MailId: true
+    PocName: true,
+    MailId: true,
   };
   const [page, setPage] = useState(1);
   const [finalData, setFinalData] = useState([]);

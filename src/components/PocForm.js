@@ -58,7 +58,7 @@ function PocForm() {
         <p>Mail Id</p>
         <input
           className="inputField"
-          type="text"
+          type="email"
           placeholder="poc@gmail.com"
           onChange={insertMailId}
           value={formData.MailId}

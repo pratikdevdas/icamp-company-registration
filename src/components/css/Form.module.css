@@ -68,8 +68,7 @@
   border-radius: 0px 6px 6px 0px;
 }
 .amount {
-  width: 90% ;
-  
+  width: 90% ;  
 }
 .useCard {
   max-width: 8rem;
@@ -122,4 +121,13 @@
   .staticInput {
     font-size: 0.5rem;
   }
+}
+
+/* sudden checkbox improvisation : do not write this code */
+.container_row_checkbox {
+  display: flex;
+  align-content: center;
+  margin-block: .5rem;
+  margin-inline: auto;
+  width: 90%;
 }

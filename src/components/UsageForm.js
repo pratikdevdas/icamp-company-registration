@@ -4,6 +4,7 @@ import FormContext from "../store/form-context";
 
 function UsageForm() {
   const { formData, setFormData } = useContext(FormContext);
+
   const insertName = (event) => {
     setFormData((prevData) => ({ ...prevData, Domains: event.target.value }));
   };
@@ -27,8 +28,12 @@ function UsageForm() {
   };
   const insertMode = (event) => {
     setFormData((prevData) => ({ ...prevData, Mode: event.target.value }));
+  };  
+  const insertPpo = (event) => {
+    setFormData((prevData) => ({ ...prevData, Ppo: event.target.checked }))
+    ;
   };
-
+  
   const options = [
 
     { label: 'On-site', value: 'On-site' },
@@ -145,9 +150,12 @@ function UsageForm() {
             <option value={option.value}>{option.label}</option>
 
           ))}
-
         </select>
       </span>
+      <div className={classes.container_row_checkbox}>
+          <input type="checkbox" name="ppo" className="ppo-checkbox" onChange={insertPpo} />
+          <p>Are you offering a Pre-Placement Offer?</p>
+        </div>
       
     </>
   );
